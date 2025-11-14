@@ -43,3 +43,8 @@ auto                      vfat     /devices/platform/11200000.usb3_xhci*        
 /vbmeta                   emmc     /dev/block/platform/bootdevice/by-name/vbmeta        flags=display=vbmeta
 /reserve2                 emmc     /dev/block/platform/bootdevice/by-name/reserve2      flags=display=reserve2
 /opporeserve              ext4     /dev/block/by-name/opporeserve2                      flags=display=opporeserve
+
+"/external_sd vfat /dev/block/mmcblk1p1/flags=display="MicroSDcard";storage;wipeingui;removable"
+
+/usb_otg atuo /dev/block/sdd1 /dev/block/sdd flags=display="USB-Storage";storage;wipeingui;removable;fsflags="utf8"
+/external_sd vfat /dev/block/mmcblk0p1 /dev/block/mmcblk0 flags=display="MicroSD";storage;wipeingui;removable;fsflags="utf8"
